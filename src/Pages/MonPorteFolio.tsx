@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 import LienNavigation from "../Components/lienNavigation";
+import {BsFacebook ,BsGithub} from "react-icons/bs";
 export default function MonPorteFolio() {
   const [isOpen, setOpen] = useState(false);
   // const [ turned , setTurned ] = useState(false);
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-[#e8e8ec]">
-      <header className="dark:bg-gray-950 backdrop-blur-md pt-4 pb-4 pl-7 pr-7">
-        <nav className="flex items-center justify-between">
+      <header className="dark:bg-gray-950 backdrop-blur-md pt-5 pb-18 pl-7 pr-7">
+        <nav className="flex items-center justify-between fixed  w-10/12">
           <div className="rounded-4xl border border-white pt-1.5 pb-1 w-12 md:w-12 block ">
             <h1 className="text-3xl font-serif text-center inline-block hover:rotate-90 duration-500 ease-linear hover:cursor-pointer">
               <span className="text-orange-400">V</span>
@@ -22,16 +23,28 @@ export default function MonPorteFolio() {
             {isOpen && (
               <>
                 <nav className="flex flex-col fixed bg-[#0a0a0f] text-2xl w-30 items-center right-2">
-                  <div className={` bg-[#0a0a0f] w-6 h-6 rotate-45 -mt-1 ml-8`}></div>
+                  <div
+                    className={` bg-[#0a0a0f] w-6 h-6 rotate-45 -mt-1 ml-8`}
+                  ></div>
                   <LienNavigation />
-                </nav> 
+                </nav>
               </>
             )}
           </div>
         </nav>
       </header>
       <main></main>
-      <footer></footer>
+      <footer className="shadow-sm shadow-orange-500 h-auto">
+        <div className=" w-full pt-4 pb-4 pl-8 pr-8 flex justify-between">
+          <div>
+            <p className="text-sm md:text-xl font-serif">&copy; 2026 All rights reserved. <br />Crafted with passion</p>
+          </div>
+          <div className="flex w-[15vw] md:w-[8vw] pt-2 justify-between">
+             <a href="https://www.facebook.com/human.wars.3/" ><BsFacebook size={35}/></a>
+             <a href="https://github.com/Ravaly23"><BsGithub  size={35}/></a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
