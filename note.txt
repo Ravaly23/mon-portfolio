@@ -1,0 +1,51 @@
+import { useState } from "react";
+
+function App() {
+  // Le Hook doit être à l'intérieur du composant
+  const [ texte, setTexte ] = useState("Teste");
+  const [ type , setType ] = useState("password")
+  const [ index , setIndex ] = useState(0)
+  const [ affiche , setAffiche ] = useState('hidden')
+  // La fonction de modification aussi
+  function changerText() {
+    setTexte("Tu as cliqué !");
+  }
+  // function changerType(){
+
+  //   setType("text")
+  // }
+  return (
+    <>
+      <h1
+        className="text-4xl text-blue-800 md:text-2xl
+   md:text-white  lg:text-red-800 sm:text-green-900  
+    hover:text-black hover:rotate-90 m-10 duration-1000 ease-linear
+     inline-block  hover:cursor-pointer"
+        onClick={changerText}
+      >
+        {texte}{index}
+      </h1>
+      <input type={type} name="" id="" className="border"/>
+      <button onClick={() => { (type == "password") ? setType("text") : setType("password")}} className="hover:cursor-pointer border rounded-br-xs rounded-tr-xs">Affiche</button>
+
+      <h1 onClick={ () => { setIndex(index + 1)}} className="hover:cursor-pointer">tu as cliqué </h1>
+      <p className={`block sm:hidden md:hidden lg:hidden xl:hidden`}>afficher</p>
+    </>
+  );
+}
+
+export default App;
+
+import { useState } from 'react'
+import { Squash as Hamburger } from 'hamburger-react'
+
+const App = () => {
+  const [isOpen, setOpen] = useState(false)
+  return (
+    <div>
+      <Hamburger toggled={isOpen} toggle={setOpen} />
+      {isOpen && <nav>Menu ouvert</nav>}
+    </div>
+  )
+}
+
