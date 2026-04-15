@@ -7,7 +7,7 @@ export default function MonPorteFolio() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-[#e8e8ec]">
       <header className="dark:bg-gray-950 backdrop-blur-md pt-4 pb-4 pl-10 pr-20">
-        <nav className="flex items-center justify-between gap-x-35">
+        <nav className="flex items-center justify-between">
           <div className="rounded-4xl border border-white pt-1.5 pb-1 w-12 md:w-12 block ">
             <h1 className="text-3xl font-serif text-center inline-block hover:rotate-90 duration-500 ease-linear hover:cursor-pointer">
               <span className="text-orange-400">V</span>
