@@ -65,7 +65,7 @@ export default function MonPorteFolio() {
           </div>
           <div className="w-11/12 mt-15 mb-5 ml-[3.5vw] flex flex-col gap-y-5 md:flex md:flex-row md:justify-around ">
             <div className="dark:bg-gray-950 text-center md:w-[28vw] border-black shadow-orange-500 shadow-sm pt-8 pb-8 ">
-              <div className="ml-[32vw]  mb-[5vw] md:ml-[12vw] md:mb-[3vw]">
+              <div className="ml-[40vw]  mb-[5vw] md:ml-[12vw] md:mb-[3vw]">
                 <GoMail size={45} />
               </div>
               <h1 className="text-xl md:text-[1.8vw] font-serif">
@@ -73,7 +73,7 @@ export default function MonPorteFolio() {
               </h1>
             </div>
             <div className="dark:bg-gray-950 text-center md:w-[28vw] border-black shadow-orange-500 shadow-sm pt-8 pb-8">
-              <div className="ml-[32vw]  mb-[5vw] md:ml-[12vw] md:mb-[3vw] ">
+              <div className="ml-[40vw]  mb-[5vw] md:ml-[12vw] md:mb-[3vw] ">
                 <BsWhatsapp size={45} />
               </div>
               <h1 className="text-xl  md:text-[1.8vw] font-serif">
@@ -81,7 +81,7 @@ export default function MonPorteFolio() {
               </h1>
             </div>
             <div className="dark:bg-gray-950 text-center md:w-[28vw] border-black shadow-orange-500 shadow-sm pt-8 pb-8">
-              <div className="ml-[32vw] mb-[5vw] md:ml-[12vw] md:mb-[3vw]">
+              <div className="ml-[40vw] mb-[5vw] md:ml-[12vw] md:mb-[3vw]">
                 <BiHome size={45} />
               </div>
               <h1 className="text-xl md:text-[1.8vw] font-serif">
