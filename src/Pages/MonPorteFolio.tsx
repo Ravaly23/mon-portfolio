@@ -7,6 +7,8 @@ import { BsWhatsapp } from "react-icons/bs";
 import { BiHome } from "react-icons/bi";
 // import { BsDownload } from "react-icons/bs";
 import imgDebout from "../assets/ImageDebout.png"
+import lienCv from "../directory/CV_RAZAFUMAHARO.pdf";
+
 export default function MonPorteFolio() {
   const [isOpen, setOpen] = useState(false);
   const [result, setResult] = useState("");
@@ -93,7 +95,7 @@ export default function MonPorteFolio() {
               </p>
               <div className="mt-[5vw] mb-[5vw] md:mt-[5vw] md:mb-[3vw]">
                 <a
-                  href=""
+                  href={lienCv}
                   className="pt-[1.5vw] pb-[1.5vw] pl-[2.5vw] pr-[2.5vw]  border-orange-500 bg-orange-500 md:text-2xl rounded-4xl md:pt-[1vw] md:pb-[1vw] md:pl-[1.5vw] md:pr-[1.5vw] hover:shadow-xl hover:shadow-orange-600 duration-1000 ease-in-out"
                 >
                   Get My Resume
@@ -102,7 +104,7 @@ export default function MonPorteFolio() {
             </div>
           </div>
           <div className="border-b border-r-0 w-[80vw] ml-[9vw] md:border-r md:border-b-0 border-orange-500 p-[5vw] md:w-5/12 md:h-[23vw] ">
-              <div className="md:w-[10vw] md:h-[10vw] animate-zigzag">
+              <div className="border relative left-8 w-[35vw] h-[35vw] md:w-[10vw] md:h-[10vw] animate-zigzag md:relative md:bottom-[6vw] md:right-[-15vw]">
                    <img src={imgDebout} alt="" className="w-[35vw] h-[35vw] md:h-[25vw] md:w-[45vw]" />
               </div>
           </div>
