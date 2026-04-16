@@ -2,7 +2,7 @@ export default function LienNavigation() {
   return (
     <>
       <li className="list-none">
-        <a href="" className="text-white hover:text-orange-400">
+        <a href="#home" className="text-white hover:text-orange-400">
           Home
         </a>
       </li>

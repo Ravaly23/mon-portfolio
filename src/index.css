@@ -1,2 +1,31 @@
-@import "tailwindcss"
+@theme {
+  --animate-tourner: tourner 3s ease-in-out infinite;
+  --animate-zigzag : zigzag 5s ease-in-out infinite;
+}
+@keyframes tourner {
+  0% {
+    opacity: 1;
+    
+  }
+  50% {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
 
+@keyframes zigzag {
+    0%{
+        opacity: 0;
+        transform: translateX(300%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-100%) rotateY(180deg) ;
+    }
+    
+}
+@import "tailwindcss";
