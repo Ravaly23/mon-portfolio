@@ -61,7 +61,7 @@ export default function MonPorteFolio() {
             <p className="text-[2.5vw] md:text-xl font-serif ml-[10vw] mr-[10vw]">
               Have a project in mind? I'd love to hear about it. Drop me a line
               and let's discuss how <br />
-              we can bring your vision to life.
+              we can bring your vision to life.ls
             </p>
           </div>
           <div className="w-11/12 mt-15 mb-5 ml-[3.5vw] flex flex-col gap-y-5 md:flex md:flex-row md:justify-around ">
