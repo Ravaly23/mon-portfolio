@@ -89,7 +89,7 @@ export default function MonPorteFolio() {
               </h1>
             </div>
           </div>
-          <form onSubmit={onSubmit} className="border text-[3vw] w-10/12 ml-[8vw] mb-[7vw] md:w-7/12 md:mt-[5vw] md:mb-[5vw] md:ml-[21vw] md:text-center text-center md:text-2xl font-serif md:rounded-4xl pt-5 pb-5">
+          <form onSubmit={onSubmit} className="rounded-2xl border text-[3vw] w-10/12 ml-[8vw] mb-[7vw] md:w-7/12 md:mt-[5vw] md:mb-[5vw] md:ml-[21vw] md:text-center text-center md:text-2xl font-serif md:rounded-4xl pt-5 pb-5">
             <input type="text" name="name" required placeholder="Enter your name..." className="w-[70vw] md:border-[0.1vw] md:w-[50vw] md:mr-[2vw] pl-[2vw] pr-[2vw] pt-[0.75vw] pb-[0.75vw] border mb-5  mt-7  md:rounded-tr-4xl md:rounded-bl-4xl rounded-tr-2xl rounded-bl-2xl"/><br />
             <input type="email" name="email" required placeholder="Enter your email..." className="w-[70vw] md:border-[0.1vw] md:w-[50vw]  md:mr-[2vw] pl-[2vw] pr-[2vw] pt-[0.75vw] pb-[0.75vw] border mb-5  md:rounded-tr-4xl md:rounded-bl-4xl rounded-tr-2xl rounded-bl-2xl"/><br />
             <textarea name="message" required placeholder="Write here your message!!!" className="border w-[70vw] mb-[3vw] p-[1vw] rounded-tr-2xl rounded-bl-2xl md:w-[50vw] md:mr-5 md:rounded-bl-4xl md:rounded-tr-4xl md:p-3 md:mt-[2vw] scrollbar-hide overflow-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] md:resize-none resize-none"></textarea><br />
