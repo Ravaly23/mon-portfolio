@@ -26,7 +26,7 @@ export default function MonPorteFolio() {
   };
   const text = ["Web Developer", "Desktop Developer", "Software Designer"];
   const [index, setIndex] = useState(0); // Pour savoir quel métier on affiche
-  const [wordsToDisplay, setWordsToDisplay] = useState([]);
+  const [wordsToDisplay, setWordsToDisplay] = useState<string[]>([]);
   const speed = 100;
 
   useEffect(() => {
