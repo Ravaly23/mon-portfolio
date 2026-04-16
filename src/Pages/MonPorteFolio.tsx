@@ -9,9 +9,9 @@ export default function MonPorteFolio() {
   const [isOpen, setOpen] = useState(false);
   const [result, setResult] = useState("");
 
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
     formData.append("access_key", "284bc1b1-b681-4069-a34a-3e9c30397607");
 
     const response = await fetch("https://api.web3forms.com/submit", {
