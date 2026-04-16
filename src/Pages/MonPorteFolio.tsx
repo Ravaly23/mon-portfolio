@@ -7,7 +7,6 @@ import { BsWhatsapp } from "react-icons/bs";
 import { BiHome } from "react-icons/bi";
 export default function MonPorteFolio() {
   const [isOpen, setOpen] = useState(false);
-  // const [ turned , setTurned ] = useState(false);
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
