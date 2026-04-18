@@ -7,7 +7,7 @@ export default function LienNavigation() {
         </a>
       </li>
       <li className="list-none">
-        <a href="" className="text-white hover:text-orange-400">
+        <a href="#about" className="text-white hover:text-orange-400">
           About
         </a>
       </li>

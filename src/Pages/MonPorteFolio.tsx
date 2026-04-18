@@ -6,8 +6,11 @@ import { GoMail } from "react-icons/go";
 import { BsWhatsapp } from "react-icons/bs";
 import { BiHome } from "react-icons/bi";
 // import { BsDownload } from "react-icons/bs";
-import imgDebout from "../assets/ImageDebout.png"
+import imgDebout from "../assets/ImageDebout.png";
 import lienCv from "../directory/CV_RAZAFUMAHARO.pdf";
+import imgAssis from "../assets/ImageAssis.png";
+import React from "react";
+
 
 export default function MonPorteFolio() {
   const [isOpen, setOpen] = useState(false);
@@ -82,7 +85,10 @@ export default function MonPorteFolio() {
       </header>
       <main>
         {/* Home */}
-        <div id="home" className="flex flex-col pt-[2vw] pb-[3vw] md:mt-[5vw] md:mb-[5vw] md:flex md:flex-row justify-between md:mr-[2vw] md:ml-[2vw]">
+        <div
+          id="home"
+          className="flex flex-col pt-[2vw] pb-[3vw] md:mt-[5vw] md:mb-[5vw] md:flex md:flex-row justify-between md:mr-[2vw] md:ml-[2vw] "
+        >
           <div className="border-b border-r-0 w-[80vw] ml-[9vw] md:border-r md:border-b-0 border-orange-500 md:w-5/12 md:h-[23vw] md:p-[1vw]">
             <div className="text-center">
               <h1 className="text-xl md:text-3xl font-serif md:mb-[1vw]">
@@ -104,10 +110,46 @@ export default function MonPorteFolio() {
             </div>
           </div>
           <div className="border-b border-r-0 w-[80vw] ml-[9vw] md:border-r md:border-b-0 border-orange-500 p-[5vw] md:w-5/12 md:h-[23vw] ">
-              <div className="border relative left-8 w-[35vw] h-[35vw] md:w-[10vw] md:h-[10vw] animate-zigzag md:relative md:bottom-[6vw] md:right-[-15vw]">
-                   <img src={imgDebout} alt="" className="w-[35vw] h-[35vw] md:h-[25vw] md:w-[45vw]" />
-              </div>
+            <div className="relative left-8 w-[35vw] h-[35vw] md:w-[10vw] md:h-[10vw] animate-zigzag md:relative md:bottom-[6vw] md:right-[-15vw]">
+              <img
+                src={imgDebout}
+                alt=""
+                className="w-[35vw] h-[35vw] md:h-[25vw] md:w-[45vw]"
+              />
+            </div>
           </div>
+        </div>
+
+        {/* About */}
+        <div
+          id="about"
+          className="flex flex-col md:w-10/12 md:m-[7vw] md:flex md:flex-row md:justify-between"
+        >
+          <div
+            className={` border-t border-b border-orange-500 w-[80vw] mt-[10vw] mr-[5vw] mb-[5vw] ml-[10vw] shadow-2xl shadow-gray-800 md:w-6/12 md:mt-[5vw] md:mb-[5vw] md:ml-[5vw] md:mr-[1vw] md:border-t md:border-b md:border-orange-500 pt-[5vw] md:shadow-2xl md:shadow-gray-800`}
+          >
+            <h1 className="font-serif text-center text-2xl text-orange-500 md:text-4xl md:mb-[5vw]">
+              About me
+            </h1>
+            <p className="text-[3.5vw] text-center p-[2vw] md:text-2xl md:text-center ">
+              Driven by a passion for technology and a disciplined approach to
+              development, I turn complex ideas into robust digital solutions.
+              You can count on my total commitment and attention to detail to
+              make your project a success.
+            </p>
+          </div>
+          <div
+            className="hidden md:shadow-2xl md:shadow-gray-800 md:h-[45vw] md:inline-flex
+          "
+          >
+            <img src={imgAssis} alt="" className="md:h-[45vw] md:w-[50vw]" />
+          </div>
+        </div>
+
+        {/* defilement */}
+        <div className="dark:bg-gray-950 pt-[5vw] pb-[5vw] pl-[10vw] pr-[10vw] mt-[5vw] mb-[5vw] text-center">
+          <h1 className="animate-bounce font-serif text-2xl text-shadow-2xs text-shadow-orange-500  md:text-4xl">Web Developer * Desktop Developer * Software Designer</h1>
+
         </div>
 
         {/* Contact */}
