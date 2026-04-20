@@ -12,12 +12,12 @@ export default function LienNavigation() {
         </a>
       </li>
       <li className="list-none">
-        <a href="" className="text-white hover:text-orange-400">
+        <a href="#skill" className="text-white hover:text-orange-400">
           Skills
         </a>
       </li>
       <li className="list-none">
-        <a href="" className="text-white hover:text-orange-400">
+        <a href="#service" className="text-white hover:text-orange-400">
           Services
         </a>
       </li>

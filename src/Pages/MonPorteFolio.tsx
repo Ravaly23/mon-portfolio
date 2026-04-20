@@ -10,7 +10,15 @@ import imgDebout from "../assets/ImageDebout.png";
 import lienCv from "../directory/CV_RAZAFUMAHARO.pdf";
 import imgAssis from "../assets/ImageAssis.png";
 import React from "react";
-
+import { BsGlobe } from "react-icons/bs";
+import { BiLogoHtml5 } from "react-icons/bi";
+import { BiLogoCss3 } from "react-icons/bi";
+import { BiLogoJavascript } from "react-icons/bi";
+import { BiLogoReact } from "react-icons/bi";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoPhp } from "react-icons/bi";
+import { SiLaravel } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
 
 export default function MonPorteFolio() {
   const [isOpen, setOpen] = useState(false);
@@ -92,7 +100,7 @@ export default function MonPorteFolio() {
           <div className="border-b border-r-0 w-[80vw] ml-[9vw] md:border-r md:border-b-0 border-orange-500 md:w-5/12 md:h-[23vw] md:p-[1vw]">
             <div className="text-center">
               <h1 className="text-xl md:text-3xl font-serif md:mb-[1vw]">
-                Hey , My name is <span>RAZAFIMAHARO </span>Andriantsoa{" "}
+                Hello , My name is <span>RAZAFIMAHARO </span>Andriantsoa{" "}
                 <span>Valery</span>
               </h1>
               <p className="text-xl md:text-2xl font-serif">
@@ -148,8 +156,52 @@ export default function MonPorteFolio() {
 
         {/* defilement */}
         <div className="dark:bg-gray-950 pt-[5vw] pb-[5vw] pl-[10vw] pr-[10vw] mt-[5vw] mb-[5vw] text-center">
-          <h1 className="animate-bounce font-serif text-2xl text-shadow-2xs text-shadow-orange-500  md:text-4xl">Web Developer * Desktop Developer * Software Designer</h1>
+          <h1 className="animate-bounce font-serif text-2xl text-shadow-2xs text-shadow-orange-500  md:text-4xl">
+            Web Developer * Desktop Developer * Software Designer
+          </h1>
+        </div>
 
+        {/* skills */}
+        <div
+          id="skill"
+          className="p-[5vw] border-t-[0.1vw] border-b-[0.1vw] border-orange-500 m-[5vw] rounded-t-4xl rounded-b-4xl h-auto"
+        >
+          <div>
+            <h1 className="text-center text-2xl font-serif text-orange-500 md:text-4xl ">
+              Skills
+            </h1>
+          </div>
+          <div className="flex flex-col gap-y-[3vw] mt-[5vw] mb-[5vw] md:flex-row md:gap-x-[2vw] " >
+            <div className="w-12/12 h-auto  md:w-7/12 md:h-auto rounded-2xl shadow-orange-500 shadow-xl/15 hover:cursor-pointer hover:text-white hover:bg-orange-500">
+              <div className="relative md:left-[1.5vw] md:top-[2.2vw]">
+                <BsGlobe size={25} />
+              </div>
+              <h1 className="text-2xl md:text-2xl text-center">
+                <span className="text-orange-500">Web</span>{" "}
+                <span className="text-orange-300">Development</span>
+              </h1>
+              <h2 className="font-serif text-2xl md:text-2xl md:ml-[2.5vw] md:mt-[1vw]">
+                Frontend :
+              </h2>
+              <ul className="text-center flex flex-col gap-y-[1.2vw] pt-[1vw] pl-[1vw] text-2xl md:text-xl mb-[2vw]">
+                <li className="list-none"><div className="absolute "><BiLogoHtml5 size={30}/></div>HTML5</li>
+                <li className="list-none"><div className="absolute "><BiLogoCss3 size={30}/></div>CSS3</li>
+                <li className="list-none"><div className="absolute "><BiLogoJavascript size={30}/></div>JAVASCRIPT</li>
+                <li className="list-none"><div className="absolute "><BiLogoTailwindCss size={30}/></div>TAILWINDCSS(Framework CSS)</li>
+                <li className="list-none"><div className="absolute "><BiLogoReact size={30}/></div>REACT(Library JS)</li>
+              </ul>
+              <h2 className="font-serif text-2xl md:text-2xl md:ml-[2.5vw] md:mt-[1vw]">
+                Backend :
+              </h2>
+              <ul className="text-center flex flex-col gap-y-[0.5vw] pt-[1vw] pl-[1vw] text-2xl md:text-xl mb-[2vw]">
+                <li className="list-none"><div className="absolute "><BiLogoPhp size={30}/></div>PHP</li>
+                <li className="list-none"><div className="absolute "><SiLaravel size={30}/></div>LARAVEL(Framework PHP)</li>
+                <li className="list-none"><div className="absolute "><SiMysql size={30}/></div>MySql</li>
+              </ul>
+            </div>
+            <div className="w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15"></div>
+            <div className="w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15"></div>
+          </div>
         </div>
 
         {/* Contact */}
