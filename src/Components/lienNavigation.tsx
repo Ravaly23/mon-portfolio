@@ -17,7 +17,7 @@ export default function LienNavigation() {
         </a>
       </li>
       <li className="list-none">
-        <a href="#service" className="text-white hover:text-orange-400">
+        <a href="#services" className="text-white hover:text-orange-400">
           Services
         </a>
       </li>
