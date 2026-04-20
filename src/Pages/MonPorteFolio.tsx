@@ -29,6 +29,22 @@ import { MdOutlineDesignServices } from "react-icons/md";
 export default function MonPorteFolio() {
   const [isOpen, setOpen] = useState(false);
   const [result, setResult] = useState("");
+  const [flexyCol, setflexyCol] = useState("flex-col");
+  const [flexyRow, setflexyRow] = useState("md:flex-row");
+
+  const changeFlexyCol = () => {
+    if (flexyCol === "flex-col") {
+      setflexyCol("flex-col-reverse");
+    }else if(flexyCol === "flex-col-reverse"){
+      setflexyCol("flex-col");
+    }else if(flexyRow === "md:flex-row"){
+      setflexyRow("md:flex-row-reverse");
+    }else{
+      setflexyRow("md:flex-row");
+    }
+  };
+
+  
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -245,8 +261,13 @@ export default function MonPorteFolio() {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col gap-y-[9vw] mt-[5vw] mb-[5vw] md:flex-row md:gap-x-[2vw] ">
-              <div className="bg-gray-950  w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15">
+            <div
+              className={`flex  ${flexyCol} gap-y-[9vw] mt-[5vw] mb-[5vw] ${flexyRow} md:gap-x-[2vw] `}
+            >
+              <div
+                className="bg-gray-950  w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15 hover:cursor-pointer"
+                onClick={changeFlexyCol}
+              >
                 <div className="relative md:left-[1.5vw] md:top-[2.2vw]">
                   <FaDesktop size={25} />
                 </div>
@@ -271,7 +292,11 @@ export default function MonPorteFolio() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gray-950 w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15">
+              <div
+                className="bg-gray-950 w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15 hover:cursor-pointer"
+                onClick={changeFlexyCol}
+
+              >
                 <div className="relative md:left-[1.5vw] md:top-[2.2vw]">
                   <SiAltiumdesigner size={30} />
                 </div>
