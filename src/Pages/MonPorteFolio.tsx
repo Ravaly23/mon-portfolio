@@ -19,6 +19,12 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 import { BiLogoPhp } from "react-icons/bi";
 import { SiLaravel } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import { FaDesktop } from "react-icons/fa";
+import { BiLogoJava } from "react-icons/bi";
+import { BiLogoPython } from "react-icons/bi";
+import { SiAltiumdesigner } from "react-icons/si";
+import { MdDesignServices } from "react-icons/md";
+import { MdOutlineDesignServices } from "react-icons/md";
 
 export default function MonPorteFolio() {
   const [isOpen, setOpen] = useState(false);
@@ -65,7 +71,7 @@ export default function MonPorteFolio() {
   }, [wordsToDisplay, index]);
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-[#e8e8ec]">
-      <header className="dark:bg-gray-950 backdrop-blur-md pt-5 pb-18 pl-7 pr-7">
+      <header className="dark:bg-gray-950 backdrop-blur-md pt-5 pb-18 pl-7 pr-7 ">
         <nav className="flex items-center justify-between fixed  w-10/12">
           <div className="rounded-4xl border border-white pt-1.5 pb-1 w-12 md:w-12 block ">
             <h1 className="text-3xl font-serif text-center inline-block animate-tourner hover:cursor-pointer">
@@ -171,43 +177,129 @@ export default function MonPorteFolio() {
               Skills
             </h1>
           </div>
-          <div className="flex flex-col gap-y-[3vw] mt-[5vw] mb-[5vw] md:flex-row md:gap-x-[2vw] " >
-            <div className="w-12/12 h-auto  md:w-7/12 md:h-auto rounded-2xl shadow-orange-500 shadow-xl/15 hover:cursor-pointer hover:text-white hover:bg-orange-500">
+          <div className="flex flex-col m-[2vw] gap-y-[6vw] md:gap-y-[3vw]">
+            <div className="bg-gray-950  w-12/12 h-auto p-[1vw]   md:w-12/12 md:h-auto rounded-2xl shadow-orange-500 shadow-xl/15  ">
               <div className="relative md:left-[1.5vw] md:top-[2.2vw]">
                 <BsGlobe size={25} />
               </div>
-              <h1 className="text-2xl md:text-2xl text-center">
+              <h1 className="text-2xl relative bottom-[8vw] md:text-2xl md:relative md:bottom-0 text-center">
                 <span className="text-orange-500">Web</span>{" "}
                 <span className="text-orange-300">Development</span>
               </h1>
-              <h2 className="font-serif text-2xl md:text-2xl md:ml-[2.5vw] md:mt-[1vw]">
+              <h2 className="font-serif text-2xl mt-[2vw] mb-[3vw] md:text-2xl md:ml-[2.5vw] md:mt-[1vw]">
                 Frontend :
               </h2>
-              <ul className="text-center flex flex-col gap-y-[1.2vw] pt-[1vw] pl-[1vw] text-2xl md:text-xl mb-[2vw]">
-                <li className="list-none"><div className="absolute "><BiLogoHtml5 size={30}/></div>HTML5</li>
-                <li className="list-none"><div className="absolute "><BiLogoCss3 size={30}/></div>CSS3</li>
-                <li className="list-none"><div className="absolute "><BiLogoJavascript size={30}/></div>JAVASCRIPT</li>
-                <li className="list-none"><div className="absolute "><BiLogoTailwindCss size={30}/></div>TAILWINDCSS(Framework CSS)</li>
-                <li className="list-none"><div className="absolute "><BiLogoReact size={30}/></div>REACT(Library JS)</li>
+              <ul className="text-center flex flex-col gap-y-[6.5vw] md:gap-y-[2vw] pt-[1vw] pl-[1vw] text-[4vw] md:text-xl mb-[2vw]">
+                <li className="list-none">
+                  <div className="absolute ">
+                    <BiLogoHtml5 size={30} />
+                  </div>
+                  HTML5
+                </li>
+                <li className="list-none">
+                  <div className="absolute ">
+                    <BiLogoCss3 size={30} />
+                  </div>
+                  CSS3
+                </li>
+                <li className="list-none">
+                  <div className="absolute ">
+                    <BiLogoJavascript size={30} />
+                  </div>
+                  JAVASCRIPT
+                </li>
+                <li className="list-none">
+                  <div className="absolute ">
+                    <BiLogoTailwindCss size={30} />
+                  </div>
+                  TAILWINDCSS(Framework CSS)
+                </li>
+                <li className="list-none">
+                  <div className="absolute ">
+                    <BiLogoReact size={30} />
+                  </div>
+                  REACT(Library JS)
+                </li>
               </ul>
-              <h2 className="font-serif text-2xl md:text-2xl md:ml-[2.5vw] md:mt-[1vw]">
+              <h2 className="font-serif text-2xl mt-[5vw] md:text-2xl md:ml-[2.5vw] md:mt-[1vw]">
                 Backend :
               </h2>
-              <ul className="text-center flex flex-col gap-y-[0.5vw] pt-[1vw] pl-[1vw] text-2xl md:text-xl mb-[2vw]">
-                <li className="list-none"><div className="absolute "><BiLogoPhp size={30}/></div>PHP</li>
-                <li className="list-none"><div className="absolute "><SiLaravel size={30}/></div>LARAVEL(Framework PHP)</li>
-                <li className="list-none"><div className="absolute "><SiMysql size={30}/></div>MySql</li>
+              <ul className="text-center flex flex-col gap-y-[5vw] md:gap-y-[2vw] pt-[1vw] pl-[1vw] text-[4vw] md:text-xl mb-[2vw]">
+                <li className="list-none">
+                  <div className="absolute ">
+                    <BiLogoPhp size={30} />
+                  </div>
+                  PHP
+                </li>
+                <li className="list-none">
+                  <div className="absolute ">
+                    <SiLaravel size={30} />
+                  </div>
+                  LARAVEL(Framework PHP)
+                </li>
+                <li className="list-none">
+                  <div className="absolute ">
+                    <SiMysql size={30} />
+                  </div>
+                  MySql
+                </li>
               </ul>
             </div>
-            <div className="w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15"></div>
-            <div className="w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15"></div>
+            <div className="flex flex-col gap-y-[9vw] mt-[5vw] mb-[5vw] md:flex-row md:gap-x-[2vw] ">
+              <div className="bg-gray-950  w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15">
+                <div className="relative md:left-[1.5vw] md:top-[2.2vw]">
+                  <FaDesktop size={25} />
+                </div>
+                <h1 className="text-2xl relative bottom-[8vw] left-2 md:text-2xl text-center md:relative md:bottom-0 md:left-0">
+                  <span className="text-orange-500">Desktop</span>{" "}
+                  <span className="text-orange-300">Development</span>
+                </h1>
+                <ul className="text-center flex flex-col gap-y-[2vw] md:pt-[1vw] pl-[1vw] pb-[5vw]  md:pb-0 text-[4vw] md:text-xl mb-[2vw]">
+                  <li className="list-none">
+                    {" "}
+                    <div className="absolute ">
+                      <BiLogoJava size={30} />
+                    </div>
+                    JAVA
+                  </li>
+                  <li className="list-none">
+                    {" "}
+                    <div className="absolute ">
+                      <BiLogoPython size={30} />
+                    </div>
+                    PYTHON
+                  </li>
+                </ul>
+              </div>
+              <div className="bg-gray-950 w-12/12 h-auto md:w-7/12 md:h-[15vw] rounded-2xl shadow-orange-500 shadow-xl/15">
+                <div className="relative md:left-[1.5vw] md:top-[2.2vw]">
+                  <SiAltiumdesigner size={30} />
+                </div>
+                <h1 className="text-2xl relative bottom-[8vw]  md:text-2xl text-center md:relative md:bottom-0">
+                  <span className="text-orange-500">Software</span>{" "}
+                  <span className="text-orange-300">Designer</span>
+                </h1>
+                <ul className="text-center flex flex-col gap-y-[5vw] pt-[1vw] pl-[1vw] pb-[5vw] md:pb-0 text-[4vw] md:text-xl mb-[2vw] md:gap-y-[1.5vw]">
+                  <li>
+                    <div className="absolute ">
+                      <MdDesignServices size={30} />
+                    </div>
+                    MERISE
+                  </li>
+                  <li>
+                    <div className="absolute ">
+                      <MdOutlineDesignServices size={30} />
+                    </div>
+                    UML
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Services */}
-        <div id="services">
-          
-        </div>
+        <div id="services"></div>
 
         {/* Contact */}
         <div
