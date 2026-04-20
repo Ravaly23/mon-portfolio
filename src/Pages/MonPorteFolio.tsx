@@ -103,7 +103,7 @@ export default function MonPorteFolio() {
           id="home"
           className="flex flex-col pt-[2vw] pb-[3vw] md:mt-[5vw] md:mb-[5vw] md:flex md:flex-row justify-between md:mr-[2vw] md:ml-[2vw] "
         >
-          <div className="border-b border-r-0 w-[80vw] ml-[9vw] md:border-r md:border-b-0 border-orange-500 md:w-5/12 md:h-[23vw] md:p-[1vw]">
+          <div className=" border-r-0 w-[80vw] ml-[9vw] md:border-r md:border-b-0 border-orange-500 md:w-5/12 md:h-[23vw] md:p-[1vw]">
             <div className="text-center">
               <h1 className="text-xl md:text-3xl font-serif md:mb-[1vw]">
                 Hello , My name is <span>RAZAFIMAHARO </span>Andriantsoa{" "}
@@ -123,7 +123,7 @@ export default function MonPorteFolio() {
               </div>
             </div>
           </div>
-          <div className="border-b border-r-0 w-[80vw] ml-[9vw] md:border-r md:border-b-0 border-orange-500 p-[5vw] md:w-5/12 md:h-[23vw] ">
+          <div className=" w-[80vw] ml-[9vw] border-orange-500 p-[5vw] md:w-5/12 md:h-[23vw] ">
             <div className="relative left-8 w-[35vw] h-[35vw] md:w-[10vw] md:h-[10vw] animate-zigzag md:relative md:bottom-[6vw] md:right-[-15vw]">
               <img
                 src={imgDebout}
@@ -163,7 +163,7 @@ export default function MonPorteFolio() {
         {/* defilement */}
         <div className="dark:bg-gray-950 pt-[5vw] pb-[5vw] pl-[10vw] pr-[10vw] mt-[5vw] mb-[5vw] text-center">
           <h1 className="animate-bounce font-serif text-2xl text-shadow-2xs text-shadow-orange-500  md:text-4xl">
-            Web Developer * Desktop Developer * Software Designer
+            Web Developer * Desktop Developer * Software Enginer
           </h1>
         </div>
 
@@ -277,7 +277,7 @@ export default function MonPorteFolio() {
                 </div>
                 <h1 className="text-2xl relative bottom-[8vw]  md:text-2xl text-center md:relative md:bottom-0">
                   <span className="text-orange-500">Software</span>{" "}
-                  <span className="text-orange-300">Designer</span>
+                  <span className="text-orange-300">Enginer</span>
                 </h1>
                 <ul className="text-center flex flex-col gap-y-[5vw] pt-[1vw] pl-[1vw] pb-[5vw] md:pb-0 text-[4vw] md:text-xl mb-[2vw] md:gap-y-[1.5vw]">
                   <li>
@@ -303,7 +303,7 @@ export default function MonPorteFolio() {
 
         {/* Contact */}
         <div
-          className="mt-[3vw] md:mt-[2vw]  pt-[2vw] pb-[2vw] mb-[2vw] border-t-orange-400 border-t-[0.1vw]"
+          className="mt-[3vw] md:mt-[2vw]  pt-[2vw] pb-[2vw] mb-[2vw] "
           id="contact"
         >
           <div className="text-center flex flex-col gap-y-6 mt-[2vw] md:mt-[3vw]">
