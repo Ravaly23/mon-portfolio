@@ -250,7 +250,7 @@ export default function MonPorteFolio() {
                 <div className="relative md:left-[1.5vw] md:top-[2.2vw]">
                   <FaDesktop size={25} />
                 </div>
-                <h1 className="text-2xl relative bottom-[8vw] left-2 md:text-2xl text-center md:relative md:bottom-0 md:left-0">
+                <h1 className="text-2xl relative bottom-[8vw] left-4 md:text-2xl text-center md:relative md:bottom-0 md:left-0">
                   <span className="text-orange-500">Desktop</span>{" "}
                   <span className="text-orange-300">Development</span>
                 </h1>
