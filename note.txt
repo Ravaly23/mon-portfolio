@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+teste
 function App() {
   // Le Hook doit être à l'intérieur du composant
   const [ texte, setTexte ] = useState("Teste");
